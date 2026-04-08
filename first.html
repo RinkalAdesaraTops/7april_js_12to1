@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- internal js  -->
+     <script>
+        // js is synchronous language - step by step
+        console.log("Hii")
+        document.write("<b>Hello</b>")
+        document.write("<br>Good Afternoon")
+        // alert("This is first js..")
+     </script>
+</head>
+<body>
+    <div id="txt"></div>
+    <div id="txt1"></div>
+    <script>
+        document.getElementById('txt').innerHTML = "<b>First HTML</b>"
+        document.getElementById('txt1').innerText = "<b>First HTML</b>"
+    </script>
+</body>
+</html>
