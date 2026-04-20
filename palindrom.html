@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // magic no = 1729
+        //sum of digits = 1+7+2+9 = 19
+        //reverse = 91
+        //multiply = sum*rev = 19*91 = 1729
+        // 121 = reverse no =121 
+        let no = 1221
+        let rev = 0
+        let f=no
+        while (no > 0) {
+            let r = no % 10 //254%10=4 25%10=5 2%10=2
+            no = Math.floor(no / 10) //254/10=25.4 25 25/10=2.5=2
+            rev = (rev*10) + r //4*10 + 5 = 45 45*10=450+2=452
+        }
+        document.write('<br>Reverse no '+rev)
+        if(f==rev){
+            document.write('<br>It is palindrom no')
+        } else {
+            document.write('<br>It is not palindrom no')
+        }
+    </script>
+</body>
+
+</html>
