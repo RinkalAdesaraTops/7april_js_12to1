@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // elements of array - index/position - start with zero
+        let arr = [10,20,30,40,45]
+        // document.write('<br>'+arr[0])
+        // document.write('<br>'+arr[2])
+        // for(let i=0;i<5;i++){
+        //     document.write('<br>'+arr[i])
+        // }
+        // for_in & for_of loop
+        for(var x in arr){ //index-value 
+            document.write('<br>index is '+x+' -  value is '+arr[x])
+        }
+        document.write('<hr>')
+        for(var x of arr){ //only elements
+            document.write('<br> -  value is '+x)
+        }
+    </script>
+</body>
+</html>

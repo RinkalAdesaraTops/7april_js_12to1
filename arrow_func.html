@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // ES6 - Arrow function & ES7
+    </script>
+    <script>
+        // 4 types UDF 
+        //1)TNRN - take nothing return nothing
+        let add = () => {
+            let a = 45
+            let b = 20
+            document.write('<br>Addition is ' + (a + b))
+        }
+        // 2)TSRN = take something return nothing
+        var area = r => {
+            const pi = 3.14
+            document.write('<br>Area of circle is ' + (pi * r ** 2))
+        }
+        //3)TNRS - take nothing return something
+        let a = 23
+        let b = 5
+        const multiply = () => a * b //fat arrow function       
+        //4)TSRS - take something return something
+        let cube = a => a**3       
+        add()
+        area(20)
+        // let res = multiply()
+        // document.write('<br>Multiplication is '+res)
+        document.write('<br>Multiplication is ' + multiply())
+        document.write('<br>Cube is ' + cube(5))
+    </script>
+</body>
+
+</html>

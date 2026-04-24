@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [11,22,30,40]
+        document.write('<br>'+arr)
+        arr.push(55,89,90)
+        document.write('<br>'+arr)
+        arr.pop()
+        document.write('<br>'+arr)
+        arr.unshift(100,200)
+        document.write('<br>'+arr)
+        arr.shift()
+        document.write('<br>'+arr)
+        //positionwise data add or remove
+        arr.splice(3,0,45,56,67)
+        document.write('<br>'+arr)
+        arr.splice(4,2)
+        document.write('<br>'+arr)
+        //slice - positionwise data get
+        let a = arr.slice(4)
+        document.write('<br>'+a)
+        a = arr.slice(4,7) //4 5 6
+        document.write('<br>'+a)
+        a = arr.slice(-6)
+        document.write('<br>'+a)
+        a = arr.slice(-6,-2) //-2-1=-3
+        document.write('<br>'+a)
+        
+        arr = [25,6,13,400,78,8,43]
+        // document.write('<br>Asc == '+arr.sort())
+        // compare function 
+        document.write('<br>Asc == '+arr.sort(function(a,b){
+                            return a-b  //25-6=19[6,25] 13-400=-
+        })) 
+        document.write('<br>Desc == '+arr.reverse())
+    </script>
+</body>
+</html>

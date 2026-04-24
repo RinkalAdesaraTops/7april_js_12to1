@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [34,45,55,66]
+        // Generate shallow copy of array
+        // doesnot change original array 
+        let res = arr.map((i,index)=>{
+            document.write('<br>Value is '+i)
+            document.write('<br>Index is '+index)
+            return i*2
+        })
+        document.write('<br>Array is '+arr)
+        document.write('<br>New Array is '+res)
+
+        // Filter - search - return array
+        res = arr.filter((i,index)=>{
+            return i%2==0
+        })
+        console.log(res);
+        //Find - search - return only first value
+        res = arr.find((i,index)=>{
+            return i%2==0
+        })
+        console.log(res);
+        document.write('<br> Even no - '+res)
+        // includes - search - return only boolean value
+        console.log(arr.includes(770));
+        
+    </script>
+</body>
+</html>
