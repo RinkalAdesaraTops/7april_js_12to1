@@ -31,7 +31,26 @@
         document.write('<br> Even no - '+res)
         // includes - search - return only boolean value
         console.log(arr.includes(770));
-        
+        // reduce & reduceRight 
+        arr = [20,30,50,60,70]
+        // sum of all elements
+        let sum = arr.reduce((i,j)=>{
+            console.log("i is "+i);
+            console.log("j is "+j);
+            
+                return i+j //23+34 = 57 i=57 j=5 6 7 
+        })
+        document.write('<br>Sum is '+sum)
+        // some & every
+        arr = [21,32,44,55]
+        let ans = arr.some((i)=>{
+                return i%2==0
+        })
+        console.log(ans);       
+        ans = arr.every((i)=>{
+                return i%2==0
+        })
+        console.log(ans);        
     </script>
 </body>
 </html>
