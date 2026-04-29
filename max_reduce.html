@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [34,45,1,23,55,6]
+        //max=34 curr=45 max=45 curr=1
+        let ans = arr.reduce((max,curr)=>{
+            console.log("max is "+max);
+            console.log("curr is "+curr);
+                    if(curr>max){ //45>34 1>45 23>45 55>45 6>55
+                        max=curr
+                    }
+                    return max
+        })
+        document.write('<br>Max is '+ans)
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let emp = {
+            name:'test',
+            age:25,
+            salary:45000,
+            dispAll:function(){
+                return this.name+"---"+this.age
+            },
+            // getter & setter method
+            get dispSal(){
+                return this.salary
+                // return this.salary+this.name
+               
+            },
+            set newSalary(a){
+                this.salary = a
+            }
+        }
+        document.write('<br>Salary is '+emp.dispSal)
+        document.write('<br>Name & age are -- '+emp.dispAll())
+        emp.newSalary = 58000
+        document.write('<br>Salary is '+emp.dispSal)
+
+        // document.write('<br>'+emp)
+        // console.log(emp);       
+        // for(var a in emp){
+        //     document.write('<br>'+a+" is "+emp[a])
+        // }
+        // document.write('<hr>')
+        // // insert
+        // emp.lastname = "abcd"
+        // for(var a in emp){
+        //     document.write('<br>'+a+" is "+emp[a])
+        // }
+        // document.write('<hr>')
+        // // update
+        // emp.salary = 56000
+        // for(var a in emp){
+        //     document.write('<br>'+a+" is "+emp[a])
+        // }
+        // document.write('<hr>')
+        // delete emp.age
+        // for(var a in emp){
+        //     document.write('<br>'+a+" is "+emp[a])
+        // }
+        // document.write('<br>Name is '+emp.name)
+        // document.write('<br>Age is '+emp['age'])
+    </script>
+</body>
+</html>
