@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="username" value="abcd">
+    <input type="text" name="username" value="xyzss">
+    <hr>
+    <div id="demo" class="abc"></div>
+    <div id="demo" class="abc">utyutyu</div>
+    <div id="demo" class="abc">yuiyiyui</div>
+    <div id="demo1" class="abc"></div>
+
+    <script>
+        let str  = document.getElementsByName("username")
+        console.log(str);
+        // str[0].style.color = "red"
+        for(let i=0;i<str.length;i++){
+            str[i].style.color = "red"
+        }       
+    </script>
+    <script>
+        // Document object model
+        // getElementById
+        // getElementsByTagName
+        // getElementsByClassName
+        // getElementsByName
+        document.getElementById('demo').innerHTML = "<b>Hello</b>"
+        document.getElementById('demo1').innerText = "<b>Hello</b>"
+        // document.getElementById('demo').style.color = "red"
+        // document.getElementById('demo').style.backgroundColor = "yellowgreen"
+        // document.getElementById('demo').style.fontSize = "20px"
+        // let a = document.getElementsByTagName("div")
+        let a = document.getElementsByClassName("abc")
+        console.log(a);
+        // a[0].style.color = "blue"
+        // a[1].style.color = "purple"
+        for(let i = 0; i < a.length; i++) {
+            if (i % 2 == 0) { //0 1 2 3
+                a[i].style.color = "blue"
+            } else {
+                a[i].style.color = "brown"
+            }
+        }
+    </script>
+</body>
+
+</html>
