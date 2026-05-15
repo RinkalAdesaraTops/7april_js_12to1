@@ -14,11 +14,9 @@
         localStorage.setItem("name","jklm")
         localStorage.setItem("age",28)
         localStorage.setItem("salary",35000)
-
         let a = localStorage.getItem("name")
         let b = localStorage.getItem("age")
         document.getElementById('demo').innerHTML = "Your name is "+a+" && Age is "+b
-
         const rmAge = ()=>{
             localStorage.removeItem("age")
         }
